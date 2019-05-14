@@ -5,7 +5,7 @@ package ru.job4j.calculate;
  *
  *@author Artem Gandybin (arteg@mail.ru)
  * @version $Id$
- * @since 0.1
+ * @since 0.11
  */
 
 public class Calculate {
