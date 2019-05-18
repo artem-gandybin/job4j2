@@ -1,6 +1,6 @@
 package ru.job4j.converter;
 
- /**
+/**
  * Конвертор валюты.
  */
 public class Converter {
