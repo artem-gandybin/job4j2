@@ -15,7 +15,7 @@ public class Triangle {
      * @return Перимент.
      */
     public double period(double a, double b, double c) {
-        return (a+b+c) / 2;
+        return (a + b + c) / 2;
     }
 
     /**
@@ -37,7 +37,7 @@ public class Triangle {
         double p = period(a, b, c);
         if (this.exist(a, b, c)) {
             // написать формулу для расчета площади треугольника.
-            rsl = Math.sqrt(p*(p-a) * (p-b) * (p-c));
+            rsl = Math.sqrt(p * (p - a) * (p - b) * (p - c));
         }
         return rsl;
     }
@@ -45,12 +45,11 @@ public class Triangle {
     /**
      * Метод проверяет можно ли построить треугольник с такими длинами сторон.
      *
-     * Подумайте какое надо написать условие, чтобы определить можно ли построить треугольник.
      *
      * @param a Длина от точки a b.
      * @param b Длина от точки a c.
      * @param c Длина от точки b c.
-     * @return
+     * @return Сообщает, можно или нет
      */
     private boolean exist(double a, double c, double b) {
         return (a < (b + c) && b < (c + a) && c < (a + b));
