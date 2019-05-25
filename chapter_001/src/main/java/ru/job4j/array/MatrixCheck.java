@@ -16,16 +16,12 @@ public class MatrixCheck {
         int rightDiag = 0;
         for (int i = 0; i < data.length - 1; i++) {
 
-            if (data [i][i] == data [i + 1][i + 1]) {
-                leftDiag++;
-            }
-            if (data [data.length - 1 - i][i] == data[data.length - 1 - (i + 1)][i + 1]) {
-                rightDiag++;
-            }
-            if (leftDiag != rightDiag) {
+            if (data [i][i] != data [i + 1][i + 1]) {
                 result = false;
             }
-
+            if (data [data.length - 1 - i][i] != data[data.length - 1 - (i + 1)][i + 1]) {
+                result = false;
+            }
         }
         return result;
     }
